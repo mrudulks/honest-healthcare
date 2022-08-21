@@ -54,7 +54,7 @@ h2 {
 hr.botm-line {
     height: 3px;
     width: 60px;
-    background: #ffb737;
+    background: #225e82;
     position: relative;
     border: 0;
     margin: 20px 0 20px 0;
@@ -150,7 +150,7 @@ banner
 	position: relative;
 }
 .bg-color{
-	background-color: #91919187;
+	background-color: rgb(145 145 145 / 65%);
 	min-height: 650px;
 }
 .banner-info{
@@ -204,6 +204,7 @@ services
 }
 .icon-info p{
 	font-size: 15px !important;
+    text-align: justify;
 }
 /***************************************
 cta-1

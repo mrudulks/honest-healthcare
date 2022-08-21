@@ -32,7 +32,7 @@
           <hr class="botm-line">
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris cillum.</p>
         </div>
-        <div class="col-md-8 col-sm-4">
+        <div class="col-md-8 col-sm-8">
         <div class="row">
            <div class="col-md-4">
            <div class="service-info">
