@@ -4,27 +4,27 @@
       <div class="honor-logo">
         <img src="./../assets/img/honor-logo.png" alt="">
       </div>
-      <div class="honor-nav">
-        <button class="btn-close">
-            <i></i>
+      <div class="honor-nav" :class="{ active : mobBarActive}">
+        <button class="btn-close-new" @click="close()">
+            <i class="fa fa-close"></i>
         </button>
         <ul class="honor-nav-items">
           <li>
             <nuxt-link to="/">Home</nuxt-link>
           </li>
           <li>
-            <nuxt-link to="#about">about</nuxt-link>
+            <nuxt-link to="/#about">about</nuxt-link>
           </li>
           <li>
-            <nuxt-link to="#service">service</nuxt-link>
+            <nuxt-link to="/#service">service</nuxt-link>
           </li>
           <li>
-            <nuxt-link to="#contact">contact us</nuxt-link>
+            <nuxt-link to="/contact-us">contact us</nuxt-link>
           </li>
           
         </ul>
       </div>
-      <button class="btn btn-open">
+      <button class="btn btn-open" @click="open()">
         <span></span>
         <span></span>
         <span></span>
@@ -37,7 +37,8 @@ export default {
     data(){
         return{
             scrollUp:false,
-            windowTop:0
+            windowTop:0,
+            mobBarActive:false
         }
     },
     methods:{
@@ -49,6 +50,12 @@ export default {
             else{
                 this.scrollUp = false;
             }
+        },
+        open(){
+            this.mobBarActive = true;
+        },
+        close(){
+            this.mobBarActive = false;
         }
     },
   mounted() {
@@ -71,11 +78,9 @@ export default {
     width: 100%;
     background: transparent;
     transition: .3s ease-in;
+    z-index: 999;
 }
-.honor-navbar.scrolled{
-    padding: 0 0;
-        background: rgb(34 94 130 / 84%);
-}
+
 .honor-nav-contents{
     display: flex;
     justify-content: space-between;
@@ -96,8 +101,9 @@ export default {
         color: #fff;
         font-size: 14px;
 }
+
 .honor-nav-contents .nuxt-link-exact-active.nuxt-link-active{
     background: #398a6d;
-    color: #fff;
+    color: #fff !important;
 }
 </style>

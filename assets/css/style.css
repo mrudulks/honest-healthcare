@@ -69,6 +69,10 @@ hr.botm-line {
   border: 0;
   margin: 20px 0 20px 0;
 }
+hr.botm-line-center{
+    margin-left: auto;
+    margin-right: auto;
+}
 
 /***************************************
 banner
@@ -464,7 +468,8 @@ textarea.form-control {
 footer
 ***************************************/
 #footer {
-  background-color: rgb(34 94 130);
+  /*background-color: rgb(34 94 130);*/
+  background-color: rgb(161 161 161);
 }
 .ftr-tle {
   height: 50px;
@@ -478,6 +483,9 @@ footer
   height: 15px;
   line-height: 15px;
   text-align: left;
+}
+.social-icon{
+    padding-left: 0;
 }
 .social-icon li {
   float: left;
@@ -563,33 +571,52 @@ footer
 /* EXTRA ADDED CSS */
 /* NAV BAR  */
 .btn-open {
-  display: flex;
-  flex-direction: column;
-  gap: 0.3rem;
-  background: white;
-  padding: 0.8rem 0.5rem;
-  margin: 0.5rem 0rem;
-}
-.btn-open span {
-  height: 3px;
-  width: 30px;
-  background-color: grey;
-  display: block;
-}
-.btn-open span:nth-child(2) {
-  margin-left: auto;
-  width: 25px;
-}
-.btn-close{
-    display: flex;
+    display: none;
     flex-direction: column;
     gap: 0.3rem;
     background: white;
     padding: 0.8rem 0.5rem;
     margin: 0.5rem 0rem;
-    width: auto;
+  }
+  .btn-open span {
+    height: 3px;
+    width: 30px;
+    background-color: grey;
+    display: block;
+  }
+  .btn-open span:nth-child(2) {
+    margin-left: auto;
+    width: 25px;
+  }
+.btn-close-new{
+    display: none;
+}
+.honor-navbar.scrolled{
+    padding: 0 0;
+    /*background: rgb(34 94 130 / 84%)*/;
+    background: #fff;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+.px-5p{
+    padding: 0 15%;
+}
+.service-info{
+    box-shadow: rgb(99 99 99 / 20%) 0px 2px 8px 0px;
+    padding: 2rem 1rem;
+    height: 100%;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+}
+@media (min-width:992px){
+    .honor-navbar.scrolled .honor-nav-items li a{
+        color: #398a6d;
+    }
 }
 @media (max-width: 991px) {
+    .px-5p{
+        padding: 0 5%;
+    }
   .honor-nav {
     position: fixed;
     display: grid;
@@ -605,8 +632,48 @@ footer
       rgba(57, 138, 109, 1) 0%,
       rgba(34, 94, 130, 1) 100%
     );
+    visibility: hidden;
+    top: 100%;
+    transition: 0.25s cubic-bezier(0.51, 0.03, 0.64, 0.28);;
+  }
+  .honor-nav.active{
+    visibility: visible;
+    transform: translateY(-100%);
+    transition: 0.5s cubic-bezier(0.33, 0.85, 0.4, 0.96);
   }
   .honor-nav-contents .honor-nav-items{
     flex-direction: column;
   }
+  .honor-nav .btn-close-new{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    font-size: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+  }
+  .btn-open {
+    display: flex;
+  }
+  .scrolled .btn-open{
+    background: #37866a;
+  }
+  .scrolled .btn-open span{
+    background: #fff;
+  }
+  .btn-close-new{
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    background: white;
+    padding: 0.8rem 0.5rem;
+    margin: 0.5rem 0rem;
+    width: auto;
+}
 }
