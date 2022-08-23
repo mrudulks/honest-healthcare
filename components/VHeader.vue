@@ -5,6 +5,9 @@
         <img src="./../assets/img/honor-logo.png" alt="">
       </div>
       <div class="honor-nav">
+        <button class="btn-close">
+            <i></i>
+        </button>
         <ul class="honor-nav-items">
           <li>
             <nuxt-link to="/">Home</nuxt-link>
@@ -21,6 +24,11 @@
           
         </ul>
       </div>
+      <button class="btn btn-open">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
     </div>
   </nav>
 </template>
