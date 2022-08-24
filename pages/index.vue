@@ -78,7 +78,7 @@ If you are an employee, send us your resume with cover letter and references, we
         </div>
         <div class="col-md-8 col-sm-8">
         <div class="row">
-           <div class="col-md-4">
+           <div class="col-md-4 mb-4">
            <div class="service-info">
             <div class="icon">
               <i class="fa fa-stethoscope"></i>
@@ -91,7 +91,7 @@ If you are an employee, send us your resume with cover letter and references, we
           </div>
         </div>
 
-        <div class="col-md-4">
+        <div class="col-md-4 mb-4">
          <div class="service-info">
             <div class="icon">
               <i class="fa fa-ambulance"></i>
@@ -104,7 +104,7 @@ If you are an employee, send us your resume with cover letter and references, we
           </div>
         </div>
 
-        <div class="col-md-4">
+        <div class="col-md-4 mb-4">
          <div class="service-info">
             <div class="icon">
               <i class="fa fa-user-md"></i>

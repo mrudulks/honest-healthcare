@@ -11,7 +11,7 @@
           <h2 class="ser-title">Contact us</h2>
           <hr class="botm-line">
         </div> -->
-          <div class="col-md-4 col-sm-4">
+          <div class="col-md-4 col-sm-12 mb-5">
             <h3>Contact Info</h3>
             <div class="space"></div>
             <p><i class="fa fa-user fa-fw pull-left fa-2x"></i>Sanal Kumar C S </p>
@@ -23,7 +23,7 @@
             <div class="space"></div>
             <p><i class="fa fa-phone fa-fw pull-left fa-2x"></i>+1 2265044465, +1 2265040465</p>
           </div>
-          <div class="col-md-8 col-sm-8 marb20">
+          <div class="col-md-8 col-sm-12 marb20">
             <div class="contact-info">
               <h3 class="cnt-ttl">Having Any Query! Or Book an appointment</h3>
               <div class="space"></div>
@@ -131,6 +131,16 @@
     <!-- -->
   </div>
 </template>
+<script>
+export default {
+  layout:"pages",
+  data(){
+    return{
+
+    }
+  }
+}
+</script>
 <style>
   .subpage-banner {
     min-height: 350px;

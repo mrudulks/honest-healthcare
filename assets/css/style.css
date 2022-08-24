@@ -570,6 +570,45 @@ footer
 
 /* EXTRA ADDED CSS */
 /* NAV BAR  */
+.honor-navbar{
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    background: transparent;
+    transition: .3s ease-in;
+    z-index: 999;
+}
+.honor-navbar.inneractive{
+    position: relative;
+}
+.honor-navbar.inneractive.scrolled{
+    position: fixed;
+}
+.honor-nav-contents{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.honor-logo img{
+    width: 120px;
+}
+.honor-nav-contents .honor-nav-items{
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+.honor-nav-contents .honor-nav-items li a{
+        padding: 1rem;
+        display: block;
+        text-transform: uppercase;
+        color: #fff;
+        font-size: 14px;
+}
+
+.honor-nav-contents .nuxt-link-exact-active.nuxt-link-active{
+    background: #398a6d;
+    color: #fff !important;
+}
 .btn-open {
     display: none;
     flex-direction: column;
@@ -609,7 +648,8 @@ footer
     flex-direction: column;
 }
 @media (min-width:992px){
-    .honor-navbar.scrolled .honor-nav-items li a{
+    .honor-navbar.scrolled .honor-nav-items li a,
+    .honor-navbar.inneractive .honor-nav-items li a{
         color: #398a6d;
     }
 }
@@ -661,9 +701,11 @@ footer
   .btn-open {
     display: flex;
   }
+  .honor-navbar.inneractive .btn-open,
   .scrolled .btn-open{
     background: #37866a;
   }
+  .honor-navbar.inneractive .btn-open span,
   .scrolled .btn-open span{
     background: #fff;
   }

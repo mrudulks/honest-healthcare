@@ -1,5 +1,5 @@
 <template>
-  <nav class="honor-navbar" :class="{ scrolled : scrollUp }" >
+  <nav class="honor-navbar" :class="{ scrolled : scrollUp,inneractive:innerPage }">
     <div class="honor-nav-contents container">
       <div class="honor-logo">
         <img src="./../assets/img/honor-logo.png" alt="">
@@ -34,6 +34,7 @@
 </template>
 <script>
 export default {
+    props:['innerPage'],
     data(){
         return{
             scrollUp:false,
@@ -72,38 +73,5 @@ export default {
 }
 </script>
 <style>
-.honor-navbar{
-    padding: 1rem 0;
-    position: fixed;
-    width: 100%;
-    background: transparent;
-    transition: .3s ease-in;
-    z-index: 999;
-}
 
-.honor-nav-contents{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.honor-logo img{
-    width: 120px;
-}
-.honor-nav-contents .honor-nav-items{
-    display: flex;
-    align-items: center;
-    margin: 0;
-}
-.honor-nav-contents .honor-nav-items li a{
-        padding: 1rem;
-        display: block;
-        text-transform: uppercase;
-        color: #fff;
-        font-size: 14px;
-}
-
-.honor-nav-contents .nuxt-link-exact-active.nuxt-link-active{
-    background: #398a6d;
-    color: #fff !important;
-}
 </style>

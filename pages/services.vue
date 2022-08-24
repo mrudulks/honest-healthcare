@@ -107,3 +107,16 @@
     </section>
   </div>
 </template>
+<script>
+export default {
+    layout:"pages",
+    data(){
+        // innerPage:true
+    }
+}
+</script>
+<style>
+
+</style>
+
+
