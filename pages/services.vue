@@ -34,7 +34,7 @@
           <div class="col-md-6">
             <div class="service-section mb-5">
               <div class="service-section-img">
-                <img src="./../assets/img/demo-img1.jpg" alt="" class="img-fluid">
+                <img src="./../assets/img/demo-img2.jpg" alt="" class="img-fluid">
               </div>
               <div class="service-section-content">
                 <h3>Personal Support Workers</h3>
@@ -56,7 +56,7 @@
           <div class="col-md-6">
             <div class="service-section mb-5">
               <div class="service-section-img">
-                <img src="./../assets/img/demo-img1.jpg" alt="" class="img-fluid">
+                <img src="./../assets/img/demo-img3.jpg" alt="" class="img-fluid">
               </div>
               <div class="service-section-content">
                 <h3>Home Health Care</h3>
