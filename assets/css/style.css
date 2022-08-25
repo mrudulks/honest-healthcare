@@ -730,6 +730,9 @@ footer
     .px-5p{
         padding: 0 5%;
     }
+    .text-justify-sm{
+      text-align: justify;
+    }
   .honor-nav {
     position: fixed;
     display: grid;

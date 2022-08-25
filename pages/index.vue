@@ -31,7 +31,7 @@
           <div class="section-title">
             <h2 class="head-title lg-line">About Us</h2>
             <hr class="botm-line">
-            <p class="sec-para">Nursing Employment Agency that places Registered Nurses, Registered Practical Nurses and Personal Support Workers in hospitals, Long-term Care facilities and Home Care settings in Ontario.</p>
+            <p class="sec-para text-justify-sm">Nursing Employment Agency that places Registered Nurses, Registered Practical Nurses and Personal Support Workers in hospitals, Long-term Care facilities and Home Care settings in Ontario.</p>
             <a href="" style="color: #0cb8b6; padding-top:10px;">Know more..</a>
           </div>
         </div>
@@ -41,14 +41,14 @@
               <div class="more-features-box-text-icon"> <i class="fa fa-angle-right" aria-hidden="true"></i> </div>
               <div class="more-features-box-text-description">
                 <h4>Honest Healthcare</h4>
-                <p class="text-justify">Honest Healthcare Staffing Solutions was established by a group of people working in the Health Care Industry who are passionate about making a difference in people’s lives by providing quality care and support. HONEST HEALTHCARE is managed by health care professionals with many years of experience in hospital, community and Long-term Care settings. Our team includes Registered Nurses, Registered Practical Nurses, Personal Support Workers, RSWs/HCAs and experienced managers. This diversity helps us to understand your needs and your requirements when you request a service from us.</p>
+                <p class="text-justify-sm">Honest Healthcare Staffing Solutions was established by a group of people working in the Health Care Industry who are passionate about making a difference in people’s lives by providing quality care and support. HONEST HEALTHCARE is managed by health care professionals with many years of experience in hospital, community and Long-term Care settings. Our team includes Registered Nurses, Registered Practical Nurses, Personal Support Workers, RSWs/HCAs and experienced managers. This diversity helps us to understand your needs and your requirements when you request a service from us.</p>
               </div>
             </div>
             <div class="more-features-box-text">
               <div class="more-features-box-text-icon"> <i class="fa fa-angle-right" aria-hidden="true"></i> </div>
               <div class="more-features-box-text-description">
                 <h4>It's something important you want to know.</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et. Ut wisi enim ad minim veniam, quis nostrud.</p>
+                <p class="text-justify-sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et. Ut wisi enim ad minim veniam, quis nostrud.</p>
               </div>
             </div>
           </div>
@@ -58,7 +58,7 @@
         <div class="col-md-12 text-center pt-5">
           <h2 class="ser-title">What We Do</h2>
           <hr class="botm-line botm-line-center text-center">
-          <p class="px-5p">We act as a middleman between employers and professional workers, helping to match qualified professionals for your facility.
+          <p class="px-5p text-justify-sm">We act as a middleman between employers and professional workers, helping to match qualified professionals for your facility.
 If you are an employer, contact us and we will take care of your need in a professional manner.
 If you are an employee, send us your resume with cover letter and references, we will contact you </p>
         </div>
@@ -73,7 +73,7 @@ If you are an employee, send us your resume with cover letter and references, we
         <div class="col-lg-4 col-md-12 mb-5">
           <h2 class="ser-title">Our Service</h2>
           <hr class="botm-line">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris cillum.</p>
+          <p class="text-justify-sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris cillum.</p>
           
         </div>
         <div class="col-lg-8 col-sm-12 ">
