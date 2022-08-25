@@ -8,7 +8,8 @@
 body {
   /* font-family: 'Open Sans', sans-serif;
     font-family: 'Roboto Mono', monospace; */
-  font-family: 'Raleway', sans-serif;
+  /*font-family: 'Raleway', sans-serif;*/
+  font-family: 'Poppins', sans-serif;
   line-height: 20px;
   color: #999999;
   font-size: 300;
@@ -646,6 +647,78 @@ footer
     border-radius: 0.5rem;
     display: flex;
     flex-direction: column;
+}
+.contactForm input.form-control[type=text],
+.contactForm textarea.form-control{
+  border:1px solid #398a6d;
+  border-radius: .2rem;
+}
+.contactForm label{
+  margin-bottom: .8rem;
+}
+::-webkit-input-placeholder { /* Edge */
+  color: red;
+}
+
+:-ms-input-placeholder { /* Internet Explorer */
+  color: red;
+}
+
+::placeholder {
+  color: rgb(156, 156, 156) !important;
+  font-size: 12px;
+}
+
+/* SERVICE SECTION */
+.service-section{
+  box-shadow: 0 4px 12px rgb(154 159 151 / 30%);
+  overflow: hidden;
+  border-radius: 0.5rem;
+}
+.service-section-img{
+  position: relative;
+    width: 100%;
+    max-height: 450px;
+    overflow: hidden;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 12px rgb(154 159 151 / 30%);
+    margin-bottom: 2rem;
+}
+.service-section-img img{
+  object-fit: cover;
+}
+.service-section-content{
+  padding: 1rem;
+}
+/*INNER PAGE BANNER*/
+.subpage-banner{
+  position: relative;
+  min-height: 350px;
+  background-image: url("assets/img/banner-contact .jpg");
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.subpage-banner h2 {
+  color: #fff;
+}
+.banner-overlay{
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background: #8f8f8f82;
+  z-index: 0;
+}
+.subpage-banner h2{
+  position: relative;
+}
+.service-section ul{
+  list-style: none;
+}
+.service-section ul li{
+  margin-bottom: 1rem;
 }
 @media (min-width:992px){
     .honor-navbar.scrolled .honor-nav-items li a,

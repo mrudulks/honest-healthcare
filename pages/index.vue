@@ -27,7 +27,7 @@
   <section id="about" class="section-padding">
     <div class="container">
       <div class="row">
-        <div class="col-md-3 col-sm-4 col-xs-12">
+        <div class="col-lg-3 col-xs-12 mb-5">
           <div class="section-title">
             <h2 class="head-title lg-line">About Us</h2>
             <hr class="botm-line">
@@ -35,7 +35,7 @@
             <a href="" style="color: #0cb8b6; padding-top:10px;">Know more..</a>
           </div>
         </div>
-        <div class="col-md-9 col-sm-8 col-xs-12">
+        <div class="col-lg-9  col-xs-12">
           <div style="visibility: visible;" class="col-md-9 more-features-box">
             <div class="more-features-box-text">
               <div class="more-features-box-text-icon"> <i class="fa fa-angle-right" aria-hidden="true"></i> </div>
@@ -70,13 +70,13 @@ If you are an employee, send us your resume with cover letter and references, we
   <section id="service" class="section-padding">
     <div class="container">
       <div class="row">
-        <div class="col-md-4 col-sm-4">
+        <div class="col-lg-4 col-md-12 mb-5">
           <h2 class="ser-title">Our Service</h2>
           <hr class="botm-line">
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris cillum.</p>
           
         </div>
-        <div class="col-md-8 col-sm-8">
+        <div class="col-lg-8 col-sm-12 ">
         <div class="row">
            <div class="col-md-4 mb-4">
            <div class="service-info">

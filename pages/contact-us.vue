@@ -1,6 +1,7 @@
 <template>
   <div class="main-container">
     <section class="subpage-banner">
+    <div class="banner-overlay"></div>
       <h2>Contact Us</h2>
     </section>
     <!--contact-->
@@ -39,7 +40,7 @@
                   </div>
                   <div class="form-group mb-4 col-md-4">
                     <label for="">Middle Name</label>
-                    <input type="text" name="name" class="form-control br-radius-zero" id="name" placeholder="Middele Name"
+                    <input type="text" name="name" class="form-control br-radius-zero" id="name" placeholder="Middle Name"
                       data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
                     <div class="validation"></div>
                   </div>
@@ -58,7 +59,7 @@
                     <input type="checkbox" name="" id="gender-check3">
                     <label for="gender-check3">Other</label>
                   </div>
-                  <div class="form-group mb-4 col-md-4">
+                  <div class="form-group mb-4 col-md-8">
                     <div>
                         <p>Position Applying For?</p>
                         
@@ -141,17 +142,8 @@ export default {
   }
 }
 </script>
-<style>
+<style scoped>
   .subpage-banner {
-    min-height: 350px;
-    background-image: url("assets/img/contact-banner.jpg");
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    background-image: url("assets/img/banner-contact .jpg");
   }
-
-  .subpage-banner h2 {
-    color: #fff;
-  }
-
 </style>
