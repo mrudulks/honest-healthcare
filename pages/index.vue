@@ -10,9 +10,21 @@
               <img src="@/assets/img/honor-logo.png" class="img-responsive">
             </div>
             <div class="banner-text text-center">
-              <h1 class="white">Healthcare at your desk!!</h1>
+              <!-- <h1 class="white">Healthcare at your desk!!</h1>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod <br>tempor incididunt ut labore et dolore magna aliqua.</p>
-              <a href="#contact" class="btn btn-appoint">Make an Appointment.</a>
+              <a href="#contact" class="btn btn-appoint">Make an Appointment.</a> -->
+              <div style="padding-top: 2rem;">
+                <carousel @next="next" @prev="prev">
+                    <carousel-slide  v-for="(slide, index) in slides" 
+                    :key="index" 
+                    :index="index"
+                    :visibleSlide="visibleSlide"
+                    :direction="direction"
+                    :slide="slide"
+                    >
+                    </carousel-slide>
+                </carousel>
+               </div>
             </div>
             <div class="overlay-detail text-center">
               <a href="#service"><i class="fa fa-angle-down"></i></a>
@@ -73,7 +85,7 @@ If you are an employee, send us your resume with cover letter and references, we
         <div class="col-lg-4 col-md-12 mb-5">
           <h2 class="ser-title">Our Service</h2>
           <hr class="botm-line">
-          <p class="text-justify-sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris cillum.</p>
+          <p class="text-justify-sm">Committed to provide competent, compassionate and confident approach to healthcare for everyone regardless of geographical or demographical boundaries. Our services are...</p>
           
         </div>
         <div class="col-lg-8 col-sm-12 ">
@@ -131,10 +143,74 @@ If you are an employee, send us your resume with cover letter and references, we
 
 <script>
 import VHeader from '~/components/VHeader.vue';
+import Carousel from '../components/Carousel.vue';
+import CarouselSlide from '../components/CarouselSlide.vue';
 export default {
   name: 'IndexPage',
   components:{
-    VHeader
-  }
+    VHeader,
+    Carousel,
+    CarouselSlide
+  },
+  data(){
+        return{
+            slides:[
+                {
+                    title:"Nursing Services(RN & RPN)",
+                    description:"Our Registered Staff, licensed with CNO provide quality care as part of an interdisciplinary team as per residents’ plan of care and under the scope of Nursing to promote health and wellbeing."
+                },
+                {
+                    title:"Personal Support Workers",
+                    description:"Our staff are graduates of a recognized Personal Support Worker program, demonstrate focus on resident safety and performs personal care and assist residents with ADLs with utmost respect."
+                },
+                {
+                    title:"Home Health Care",
+                    description:"We offers homecare for your loved ones as well as post-operative care."
+                }
+            ],
+            visibleSlide:0,
+            direction:'left'
+        }
+    },
+    computed:{
+        slidesLen(){
+            return this.slides.length;
+        }
+    },
+    methods:{
+        next(e){
+            if(this.visibleSlide >= this.slidesLen -1){
+                this.visibleSlide = 0
+            }else{
+                this.visibleSlide++;
+            }
+            this.direction = "left";
+            // this.setTimeOut()
+        },
+        prev(e){
+            if(this.visibleSlide <= 0){
+                this.visibleSlide = this.slidesLen - 1
+            }else{
+                this.visibleSlide--;
+            }
+            this.direction = "right"
+        },
+        timeOutCheck(){
+          console.log("timer")
+          if(this.visibleSlide >= this.slidesLen -1){
+            this.next();
+            this.setTimeOut();
+            return
+          }
+        },
+        setTimeOut(){
+          setInterval(() =>{
+            this.next();
+          },5000)
+        }
+    },
+    mounted(){
+      // this.setTimeOut()
+    }
 }
 </script>

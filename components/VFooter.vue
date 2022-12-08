@@ -8,7 +8,7 @@
                 <h4 class="white no-padding">About Us</h4>
               </div>
               <div class="info-sec">
-                <p>Praesent convallis tortor et enim laoreet, vel consectetur purus latoque penatibus et dis parturient.
+                <p style="text-align: justify;j">Nursing Employment Agency that places Registered Nurses, Registered Practical Nurses and Personal Support Workers in hospitals, Long-term Care facilities and Home Care settings in Ontario.
                 </p>
               </div>
             </div>
